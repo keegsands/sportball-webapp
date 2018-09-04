@@ -1,0 +1,190 @@
+hr {
+ background: #dddddd;
+ border: none;
+ clear: both;
+ color: #dddddd;
+ float: none;
+ height: 1px;
+ width: 100%;
+}
+
+hr.space {
+ background: #ffffff;
+ color: #ffffff;
+}
+
+.tg {
+ border-collapse: collapse;
+ border-spacing: 0;
+ border-color: #ccc;
+}
+
+.tg td {
+ font-family: Arial, sans-serif;
+ font-size: 14px;
+ padding: 10px 5px;
+ border-style: solid;
+ border-width: 1px;
+ overflow: hidden;
+ word-break: normal;
+ border-color: #ccc;
+ color: #333;
+ background-color: #fff;
+}
+
+.tg th {
+ font-family: Arial, sans-serif;
+ font-size: 14px;
+ font-weight: normal;
+ padding: 10px 5px;
+ border-style: solid;
+ border-width: 1px;
+ overflow: hidden;
+ word-break: normal;
+ border-color: #ccc;
+ color: #333;
+ background-color: #f0f0f0;
+}
+
+.tg .td-postseason{
+ padding: 10px 2px;
+}
+.tg .tg-4eph {
+ background-color: #f9f9f9
+}
+
+.tg .tg-psHeader {
+ font-weight: bold
+}
+
+.tg .tg-psFinalHeader {
+ font-weight: bold;
+ text-align: center
+}
+
+.tg .tg-psTeam {
+ text-decoration: underline
+}
+
+.tg .tg-blankSpace {
+ 
+}
+
+.outOfPostSeason td {
+ background-color: #f2f2f2;
+}
+
+.footnote{
+ font-family: Arial, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+}
+
+.rightAlignTD {
+ text-align: right;
+}
+
+.noBorder {
+ border-collapse: collapse;
+ border-spacing: 0;
+ border-color: #ccc;
+ border-style: none;
+}
+
+.center {
+ margin-left: auto;
+ margin-right: auto;
+ width: 70%;
+}
+
+
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+#homeHeader {
+	text-align: left;
+	padding-bottom: 1px;
+}
+
+#homeNavBar {
+	float: right;
+	text-align: left;
+	padding-bottom: 2px;
+}
+
+#mainImageSection {
+	float: left;
+	width: 315px;
+	text-align: left;
+	padding-left: 10px;
+	margin: 0 auto;
+}
+
+#mainPart{
+	overflow: auto;
+	width: 100%
+}
+
+#footer {
+	display: none;
+	text-align: left;
+	padding-left: 250px;
+	padding-bottom: 20px;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+#sidebar {
+
+	text-align: left;
+	padding-bottom: 20px;
+}
+
+
+
+h2.mainHeaderText {
+	font-size: 48px;
+	font-family: Verdana;
+	color: #232C51;
+}
+
+h3.linksSection{
+	color: #374065;
+	text-align: left;
+	font-size: 15px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+ul.homePage
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a.homePage{
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+/* unvisited link */
+a.homePage:link {
+    color: #737CA1;
+}
+
+/* visited link */
+a:visited.homePage {
+    color: #A5AED3;
+}
+
+/* mouse over link */
+a:hover.homePage {
+    color: #C3CCF1;
+}
+
+/* selected link */
+a:active.homePage {
+    color: blue;
+}
+

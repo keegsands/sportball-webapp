@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+	<!-- Define the Security settings -->
+	<http pattern="/css/**" security="none" />
+	<http pattern="/images/**" security="none" />
+	<http pattern="/doc/**" security="none" />
+	<http pattern="/index.jsp*" security="none" />
+	<http pattern="/login.jsp" security="none" />
+	<http pattern="/postseason.jsp*" security="none" />
+	<http pattern="/postseason-*.jsp*" security="none" />
+	<http pattern="/schedule*" security="none" />
+	<http pattern="/schedule/**" security="none" />
+	<http pattern="/standings*" security="none" />
+	<http pattern="/standings/*" security="none" />
+	<http pattern="/favicon.ico" security="none" />
+	<http auto-config="true">
+		<intercept-url pattern="/**" access="ROLE_USER" />
+		<form-login 
+		    login-page="/login.jsp" 
+		    default-target-url="/scores" 
+			authentication-failure-url="/login?error" 
+			username-parameter="username"
+			password-parameter="password" />
+	</http>
+
+	
+	<authentication-manager>
+		<authentication-provider user-service-ref="userService" >
+			<password-encoder ref="bcrypt" />
+		</authentication-provider>
+	</authentication-manager>
+	<beans:bean id="bcrypt" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+        <beans:constructor-arg name="strength" value="10" />
+    </beans:bean>
+</beans:beans>

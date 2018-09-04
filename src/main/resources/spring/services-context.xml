@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans 
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	
+	<!-- DAO and Service definitions -->
+	<beans:bean id="teamDAO" class="com.bocano.softball.dao.impl.TeamDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="teamService"
+		class="com.bocano.softball.service.impl.TeamServiceImpl">
+		<beans:property name="teamDAO" ref="teamDAO"></beans:property>
+	</beans:bean>
+	<beans:bean id="fieldDAO" class="com.bocano.softball.dao.impl.FieldDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="fieldService"
+		class="com.bocano.softball.service.impl.FieldServiceImpl">
+		<beans:property name="fieldDAO" ref="fieldDAO"></beans:property>
+	</beans:bean>
+	<beans:bean id="gameDAO" class="com.bocano.softball.dao.impl.GameDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="gameService"
+		class="com.bocano.softball.service.impl.GameServiceImpl">
+		<beans:property name="gameDAO" ref="gameDAO"></beans:property>
+	</beans:bean>
+	<beans:bean id="seasonDAO" class="com.bocano.softball.dao.impl.SeasonDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="campaignDAO" class="com.bocano.softball.dao.impl.CampaignDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="seasonService"
+		class="com.bocano.softball.service.impl.SeasonServiceImpl">
+		<beans:property name="seasonDAO" ref="seasonDAO"></beans:property>
+		<beans:property name="gameDAO" ref="gameDAO"></beans:property>
+		<beans:property name="campaignDAO" ref="campaignDAO"></beans:property>
+	</beans:bean>
+	<beans:bean id="gameTimeDAO"
+		class="com.bocano.softball.dao.impl.GameTimeDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="gameTimeService"
+		class="com.bocano.softball.service.impl.GameTimeServiceImpl">
+		<beans:property name="gameTimeDAO" ref="gameTimeDAO"></beans:property>
+	</beans:bean>
+	<beans:bean id="userDAO" class="com.bocano.softball.dao.impl.UserDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="userService"
+		class="com.bocano.softball.service.impl.UserServiceImpl">
+		<beans:property name="userDAO" ref="userDAO"></beans:property>
+	</beans:bean>
+	<beans:bean id="playerDAO" class="com.bocano.softball.dao.impl.PlayerDAOImpl">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="playerService"
+		class="com.bocano.softball.service.impl.PlayerServiceImpl">
+		<beans:property name="playerDAO" ref="playerDAO"></beans:property>
+	</beans:bean>
+	
+	<beans:bean id="campaignService"
+		class="com.bocano.softball.service.impl.CampaignServiceImpl">
+		<beans:property name="campaignDAO" ref="campaignDAO"></beans:property>
+	</beans:bean>
+	<beans:bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		
+		<beans:property name="host" value="#{contextParameters.mailHost}" />
+		<beans:property name="port" value="#{contextParameters.mailPort}" />
+		<beans:property name="username" value="#{contextParameters.mailUsername}" />
+		<beans:property name="password" value="#{contextParameters.mailPassword}" />
+
+		<beans:property name="javaMailProperties">
+		
+			<beans:props>
+				<beans:prop key="mail.transport.protocol">smtp</beans:prop>
+				<beans:prop key="mail.smtp.auth">true</beans:prop>
+				<beans:prop key="mail.smtp.starttls.enable">true</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+	<beans:bean id="mailService"
+		class="com.bocano.softball.service.impl.MailServiceImpl">
+		<beans:property name="mailSender" ref="mailSender"></beans:property>
+	</beans:bean>
+</beans:beans>

@@ -1,0 +1,7 @@
+# Hide the target folder
+target/
+.DS_STORE
+test-output
+.project
+.settings/
+.classpath
