@@ -8,7 +8,7 @@ import com.bocano.softball.model.Team;
 
 public class BaseballUtil {
 
-	public static final int CURRENT_SEASON = 12;
+	public static final int CURRENT_SEASON = 13;
 	/**
 	 * Calculate the number of games back for team 2
 	 *
