@@ -31,16 +31,16 @@
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="annotatedClasses">
 			<beans:list>
-				<beans:value>com.bocano.softball.model.Team</beans:value>
-				<beans:value>com.bocano.softball.model.Field</beans:value>
-				<beans:value>com.bocano.softball.model.Season</beans:value>
-				<beans:value>com.bocano.softball.model.GameTime</beans:value>
-				<beans:value>com.bocano.softball.model.Game</beans:value>
-				<beans:value>com.bocano.softball.model.User</beans:value>
-				<beans:value>com.bocano.softball.model.Player</beans:value>
-				<beans:value>com.bocano.softball.model.Conference</beans:value>
-				<beans:value>com.bocano.softball.model.Division</beans:value>
-				<beans:value>com.bocano.softball.model.Campaign</beans:value>
+				<beans:value>org.keegsands.sportball.model.Team</beans:value>
+				<beans:value>org.keegsands.sportball.model.Field</beans:value>
+				<beans:value>org.keegsands.sportball.model.Season</beans:value>
+				<beans:value>org.keegsands.sportball.model.GameTime</beans:value>
+				<beans:value>org.keegsands.sportball.model.Game</beans:value>
+				<beans:value>org.keegsands.sportball.model.User</beans:value>
+				<beans:value>org.keegsands.sportball.model.Player</beans:value>
+				<beans:value>org.keegsands.sportball.model.Conference</beans:value>
+				<beans:value>org.keegsands.sportball.model.Division</beans:value>
+				<beans:value>org.keegsands.sportball.model.Campaign</beans:value>
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
