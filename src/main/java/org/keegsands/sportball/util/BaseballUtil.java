@@ -8,7 +8,7 @@ import org.keegsands.sportball.model.Team;
 
 public class BaseballUtil {
 
-	public static final int CURRENT_SEASON = 13;
+	public static final int CURRENT_SEASON = 14;
 	/**
 	 * Calculate the number of games back for team 2
 	 *
