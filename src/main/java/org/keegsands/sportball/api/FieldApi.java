@@ -1,9 +1,10 @@
 package org.keegsands.sportball.api;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.keegsands.sportball.model.Field;
+import org.keegsands.sportball.service.FieldService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,17 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/fields")
 public class FieldApi {
 	
+	@Autowired
+	private FieldService fieldService;
+	
 	public FieldApi() {
-		System.out.println("starting controller");
+		System.out.println("Starting the field API");
 	}
 
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Field>> getAllFields() {
-		final List<Field> fields = new ArrayList<>();
-		final Field field = new Field();
-		field.setName("Pease");
-		field.setId(1);
-		fields.add(field);
-		return new ResponseEntity<>(fields, HttpStatus.OK);
+		return new ResponseEntity<>(fieldService.list(), HttpStatus.OK);
 	}
 }
