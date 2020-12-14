@@ -48,7 +48,7 @@ public abstract class AbstractSimpleDAOImpl<G> implements SimpleDAO<G> {
 	@SuppressWarnings("unchecked")
 	public G getById(int id) {
 		final Session session = this.sessionFactory.getCurrentSession();
-		final G p = (G) session.load(getType(), Integer.valueOf(id));
+		final G p = (G) session.get(getType(), Integer.valueOf(id));
 		getLogger().info("Entity loaded successfully, Entity details=" + p);
 		return p;
 	}
