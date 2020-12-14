@@ -4,9 +4,9 @@
 	<groupId>org.keegsands</groupId>
 	<artifactId>sportball-webapp</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<name>sportball-webapp</name>
-	<url>http://tapsoftball.herokuapp.com</url>
+	<url>http://softball.keegsands.org</url>
 	
 	<build>
 		<finalName>sportball-webapp</finalName>
@@ -127,7 +127,7 @@
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
-			<version>${commons.dbcp.version}</version>
+			<version>${commons-dcp.version}</version>
 		</dependency>
 		<!-- Spring ORM -->
 		<dependency>
@@ -140,25 +140,25 @@
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
-			<version>${org.aspectj-version}</version>
+			<version>${aspectj.version}</version>
 		</dependency>
 
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>${org.slf4j-version}</version>
+			<version>${slf4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>jcl-over-slf4j</artifactId>
-			<version>${org.slf4j-version}</version>
+			<version>${slf4j.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>${org.slf4j-version}</version>
+			<version>${slf4j.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -190,7 +190,7 @@
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
-			<version>${javax.inject.version}</version>
+			<version>${javax-inject.version}</version>
 		</dependency>
 
 		<!-- Servlet -->
@@ -235,16 +235,16 @@
 	</dependencies>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java-version>1.8</java-version>
+		<java.version>1.8</java.version>
 		<springframework.version>4.0.3.RELEASE</springframework.version>
 		<jackson.version>1.7.4</jackson.version>
 		<springframework-security.version>3.2.3.RELEASE</springframework-security.version>
-		<org.aspectj-version>1.7.4</org.aspectj-version>
-		<org.slf4j-version>1.7.5</org.slf4j-version>
+		<aspectj.version>1.7.4</aspectj.version>
+		<slf4j.version>1.7.5</slf4j.version>
 		<hibernate.version>4.3.5.Final</hibernate.version>
-		<commons.dbcp.version>1.4</commons.dbcp.version>
+		<commons-dcp.version>1.4</commons-dcp.version>
 		<log4j.version>1.2.15</log4j.version>
-		<javax.inject.version>1</javax.inject.version>
+		<javax-inject.version>1</javax-inject.version>
 		<servletapi.version> 2.5</servletapi.version>
 		<jspapi.version>2.1</jspapi.version>
 		<jstl.version>1.2</jstl.version>
