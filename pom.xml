@@ -242,7 +242,7 @@
 		<servletapi.version> 2.5</servletapi.version>
 		<jspapi.version>2.1</jspapi.version>
 		<jstl.version>1.2</jstl.version>
-		<postgresql.version>9.4.1208</postgresql.version> 
+		<postgresql.version>42.2.25</postgresql.version> 
 		<testng.version>6.8</testng.version>
 		<webapp.runner.version>7.0.57.2</webapp.runner.version> 
 		<heroku.maven.plugin.version>0.3.5</heroku.maven.plugin.version> 
