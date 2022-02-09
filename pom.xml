@@ -235,7 +235,7 @@
 		<org.springframework.security.version>3.2.3.RELEASE</org.springframework.security.version>
 		<org.aspectj-version>1.7.4</org.aspectj-version>
 		<org.slf4j-version>1.7.5</org.slf4j-version>
-		<hibernate.version>4.3.5.Final</hibernate.version>
+		<hibernate.version>5.4.24.Final</hibernate.version>
 		<commons.dbcp.version>1.4</commons.dbcp.version>
 		<log4j.version>1.2.15</log4j.version>
 		<javax.inject.version>1</javax.inject.version>
