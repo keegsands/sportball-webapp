@@ -16,4 +16,6 @@ public interface SeasonService extends SimpleService<Season> {
 	List<Standing> getStandings(int seasonID);
 	
 	List<Season> listStandingSeasons();
+
+	Season getCurrentSeason();
 }

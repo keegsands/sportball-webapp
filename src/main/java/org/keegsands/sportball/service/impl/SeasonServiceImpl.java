@@ -22,7 +22,7 @@ import org.keegsands.sportball.util.BaseballUtil;
 
 @Service
 public class SeasonServiceImpl extends AbstractSimpleServiceImpl<Season, SeasonDAO> implements SeasonService {
-
+	private static final int CURRENT_SEASON = 15;
 
 	
 	public void setSeasonDAO(final SeasonDAO seasonDAO) {
@@ -107,6 +107,12 @@ public class SeasonServiceImpl extends AbstractSimpleServiceImpl<Season, SeasonD
 	@Transactional
 	public List<Season> listStandingSeasons() {
 		return getDAO().listStandingSeasons();
+	}
+
+	@Override
+	@Transactional
+	public Season getCurrentSeason() {
+		return getDAO().getById(CURRENT_SEASON);
 	}
 
 }
