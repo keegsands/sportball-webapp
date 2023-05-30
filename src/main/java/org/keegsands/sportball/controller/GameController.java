@@ -31,7 +31,6 @@ import org.keegsands.sportball.service.MailService;
 import org.keegsands.sportball.service.SeasonService;
 import org.keegsands.sportball.service.SimpleService;
 import org.keegsands.sportball.service.TeamService;
-import org.keegsands.sportball.util.BaseballUtil;
 
 @Controller
 public class GameController {
@@ -98,14 +97,14 @@ public class GameController {
 
 	@RequestMapping(value = "/schedule", method = RequestMethod.GET)
 	public String listSchedule(Model model) {
-		model.addAttribute("listGames", this.gameService.findBySeason(BaseballUtil.CURRENT_SEASON));
+		model.addAttribute("listGames", this.gameService.findBySeason(this.seasonService.getCurrentSeason().getId()));
 
 		return "schedule";
 	}
 
 	@RequestMapping(value = "/schedule/{teamID}", method = RequestMethod.GET)
 	public String listSchedule(@PathVariable("teamID") int teamID, Model model) {
-		model.addAttribute("listGames", this.gameService.findByTeamAndSeason(teamID, BaseballUtil.CURRENT_SEASON));
+		model.addAttribute("listGames", this.gameService.findByTeamAndSeason(teamID, this.seasonService.getCurrentSeason().getId()));
 		model.addAttribute("team", teamService.getById(teamID));
 		return "teamSchedule";
 	}
