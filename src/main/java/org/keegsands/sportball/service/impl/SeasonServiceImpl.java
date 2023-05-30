@@ -22,7 +22,7 @@ import org.keegsands.sportball.util.BaseballUtil;
 
 @Service
 public class SeasonServiceImpl extends AbstractSimpleServiceImpl<Season, SeasonDAO> implements SeasonService {
-	private static final int CURRENT_SEASON = 15;
+	private static final int CURRENT_SEASON = 16;
 
 	
 	public void setSeasonDAO(final SeasonDAO seasonDAO) {
