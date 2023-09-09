@@ -23,7 +23,7 @@
 			<ul class="homePage">
 				<li><a class="homePage" href="${pageContext.request.contextPath}/schedule">Schedule</a></li>
 				<li><a class="homePage" href="${pageContext.request.contextPath}/standings">Standings</a></li>
-				<li><a class="homePage" href="${pageContext.request.contextPath}/postseason.jsp">Postseason</a></li>
+				<li><a class="homePage" href="http://keegsands.org/misc/softball-postseason.pdf" target="_blank">Postseason</a></li>
 				<li><a class="homePage" href="http://keegsands.org/misc/softball-rules.pdf" target="_blank">League Rules</a></li>
 				<li><a class="homePage" href="http://keegsands.org:8080/softball/login.jsp">Admin</a></li>
 			</ul>
