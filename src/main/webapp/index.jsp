@@ -13,8 +13,8 @@
     <div id="mainPart">
     
     	<section id="mainImageSection">
-        	<a href="${pageContext.request.contextPath}/images/2018-champions.jpg">
-        		<img src="${pageContext.request.contextPath}/images/2018-champions.jpg" width="300px" height="208px" />
+        	<a href="${pageContext.request.contextPath}/images/2023-champions-pitbulls.jpg">
+        		<img src="${pageContext.request.contextPath}/images/2023-champions-pitbulls.jpg" width="300px" height="208px" />
         	</a>
     	</section>
     
