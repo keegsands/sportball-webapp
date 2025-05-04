@@ -26,7 +26,7 @@
             <table class="tg">
                 <tr>
                     <th width="120"><fmt:message key="gamesDateTime" /></th>
-                    <th width="60"><fmt:message key="gamesField" /></th>
+                    <th width="100"><fmt:message key="gamesField" /></th>
                     <th width="120"><fmt:message key="gamesAwayTeam" /></th>
                     <th width="60"><fmt:message key="gamesRuns" /></th>
                     <th width="120"><fmt:message key="gamesHomeTeam" /></th>
