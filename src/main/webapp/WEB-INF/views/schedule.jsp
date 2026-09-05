@@ -30,7 +30,7 @@
                 <tr>
                     <th width="75"><fmt:message key="fullScheduleDate" /></th>
                     <th width="75"><fmt:message key="fullScheduleTime" /></th>
-                    <th width="60"><fmt:message key="fullScheduleField" /></th>
+                    <th width="100"><fmt:message key="fullScheduleField" /></th>
                     <th width="120"><fmt:message key="fullScheduleAway" /></th>
                     <th width="60"><fmt:message key="fullScheduleRuns" /></th>
                     <th width="120"><fmt:message key="fullScheduleHome" /></th>

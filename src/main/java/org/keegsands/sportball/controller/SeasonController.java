@@ -73,8 +73,7 @@ public class SeasonController {
 	
 	@RequestMapping(value = "/standings", method = RequestMethod.GET)
 	public String standings(Model model) {
-
-		return standingsByIdInternal(BaseballUtil.CURRENT_SEASON, model);
+		return standingsByIdInternal(seasonService.getCurrentSeason().getId(), model);
 	}
 
 	private String standingsByIdInternal(final int seasonId, Model model) {

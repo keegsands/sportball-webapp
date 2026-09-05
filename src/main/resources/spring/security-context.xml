@@ -8,6 +8,7 @@
 
 	<!-- Define the Security settings -->
 	<http pattern="/css/**" security="none" />
+	<http pattern="/api/**" security="none" />
 	<http pattern="/images/**" security="none" />
 	<http pattern="/doc/**" security="none" />
 	<http pattern="/index.jsp*" security="none" />

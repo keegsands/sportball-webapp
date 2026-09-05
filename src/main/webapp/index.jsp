@@ -13,8 +13,8 @@
     <div id="mainPart">
     
     	<section id="mainImageSection">
-        	<a href="${pageContext.request.contextPath}/images/2018-champions.jpg">
-        		<img src="${pageContext.request.contextPath}/images/2018-champions.jpg" width="300px" height="208px" />
+        	<a href="https://keegsands.org/misc/tap-champions.jpg">
+        		<img src="https://keegsands.org/misc/tap-champions.jpg" width="300px" height="208px" />
         	</a>
     	</section>
     
@@ -23,8 +23,8 @@
 			<ul class="homePage">
 				<li><a class="homePage" href="${pageContext.request.contextPath}/schedule">Schedule</a></li>
 				<li><a class="homePage" href="${pageContext.request.contextPath}/standings">Standings</a></li>
-				<li><a class="homePage" href="${pageContext.request.contextPath}/postseason.jsp">Postseason</a></li>
-				<li><a class="homePage" href="http://keegsands.org/misc/softball-rules.pdf" target="_blank">League Rules</a></li>
+				<li><a class="homePage" href="https://keegsands.org/misc/softball-postseason.pdf" target="_blank">Postseason</a></li>
+				<li><a class="homePage" href="https://keegsands.org/misc/softball-rules.pdf" target="_blank">League Rules</a></li>
 				<li><a class="homePage" href="http://keegsands.org:8080/softball/login.jsp">Admin</a></li>
 			</ul>
     	</aside>
